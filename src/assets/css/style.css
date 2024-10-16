@@ -10,6 +10,30 @@
   z-index: 10000
 }
 
+
+/* Add this to your CSS file */
+.navbar {
+  display: none; /* Hide by default */
+  list-style: none;
+  padding: 0;
+}
+
+.navbar.open {
+  display: flex; /* Show when the menu is open */
+  flex-direction: column; /* Adjust as needed */
+  position: absolute; /* Adjust based on your design */
+  top: 50px; /* Adjust based on your header height */
+  left: 0;
+  width: 100%;
+  background-color: #009688; /* Match header background */
+}
+
+#menu-icon {
+  cursor: pointer; /* Change cursor on hover */
+}
+
+
+
  * {
    margin: 0;
    padding: 0;

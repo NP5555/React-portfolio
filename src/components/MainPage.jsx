@@ -11,45 +11,60 @@ import todotaskqr from "../assets/img/todotaskqr.png";
 import backend from "../assets/img/socialmediabackend.png";
 import lifecare from "../assets/img/LifeCare-.png";
 
+
 // import Ai from "../assets/img/project4.png";
 
 const Portfolio = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
   const aboutRef = useRef(null);
-  const [loading, setLoading] = useState(true); // Loading state
+  const [loading, setLoading] = useState(true);
 
-  // Intersection Observer for animation
+
   useEffect(() => {
-    const sections = document.querySelectorAll(".fade-up"); // Get all sections with fade-up class
+    const sections = document.querySelectorAll(".fade-up"); 
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("active"); // Add the active class when the section is in view
+            entry.target.classList.add("active"); 
           }
         });
       },
       {
-        threshold: 0.1, // Trigger when 10% of the section is visible
+        threshold: 0.1,
       }
     );
 
     sections.forEach((section) => {
-      observer.observe(section); // Observe each section
+      observer.observe(section);
     });
 
+
+
+
     return () => {
-      sections.forEach((section) => observer.unobserve(section)); // Cleanup observer on unmount
+      sections.forEach((section) => observer.unobserve(section)); 
     };
   }, []);
 
-  // Simulate content loading
+
+
+
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLoading(false); // After 2 seconds, hide the loader
+      setLoading(false);
     }, 2000);
     return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
   }, []);
+
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+
 
   return (
     <div>
@@ -60,12 +75,12 @@ const Portfolio = () => {
         </div>
       ) : (
         <>
-          <header style={{ background: "#009688" }}>
+     <header style={{ background: "#009688" }}>
             <a href="#" className="logo" style={{ color: "black" }}>
               Naeem.<span style={{ color: "white" }}>Ashraf</span>
             </a>
-            <div className="bx bx-menu" id="menu-icon"></div>
-            <ul className="navbar">
+            <div className="bx bx-menu" id="menu-icon" onClick={toggleMenu}></div>
+            <ul className={`navbar ${isMenuOpen ? "open" : ""}`}>
               <li>
                 <a href="#home" style={{ color: "white" }}>
                   Home
@@ -96,7 +111,7 @@ const Portfolio = () => {
 
           {/* Rest of your content */}
           <section
-            className="home animate-fade-in-up"
+            className="home .fade-up animate-fade-in-up"
             style={{ background: "#009688" }}
             id="home"
           >
