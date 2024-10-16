@@ -4,12 +4,12 @@ import MyImg from "../assets/img/main.jpeg";
 import Learnify from "../assets/img/PROJECT1.png";
 import LinkUp from "../assets/img/project2.png";
 import Taskmanager from "../assets/img/register.png";
-import ageimg from "../assets/img/ageCalculator.png";
+import ageimg from "../assets/img/agecalculator.png";
 import getimage from "../assets/img/getImage.png";
 import pocketdictionary from "../assets/img/pocketdictionary.png";
 import todotaskqr from "../assets/img/todotaskqr.png";
 import backend from "../assets/img/socialmediabackend.png";
-import lifecare from "../assets/img/LifeCare-.png"
+import lifecare from "../assets/img/LifeCare-.png";
 
 // import Ai from "../assets/img/project4.png";
 
@@ -56,7 +56,7 @@ const Portfolio = () => {
       {loading ? (
         // Loader component
         <div className="flex items-center justify-center h-screen ">
-          <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-32 w-32"></div>
+          <div className="loader ease-linear"></div>
         </div>
       ) : (
         <>
@@ -241,13 +241,13 @@ const Portfolio = () => {
             </div>
           </section>
 
-          <section className="projects animate-fade-in-up">
+          <section className="projects animate-fade-in-up"      style={{ background: "#009688" }}   id="projects">
             <div className="heading mb-10">
               <h2 style={{ color: "black", fontWeight: "bold" }}>Projects</h2>
               <span style={{ color: "white" }}>some of my work"</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="https://link-upsocial.netlify.app/">
                   <img class="rounded-t-lg" src={LinkUp} alt="" />
                 </a>
@@ -290,7 +290,7 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="https://github.com/NP5555/E-Learn-Backend">
                   <img class="rounded-t-lg" src={backend} alt="" />
                 </a>
@@ -334,7 +334,7 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm border border-gray-200 rounded-lg shadow bg-black">
+              <div class="max-w-sm rounded-lg shadow bg-black">
                 <a href="#">
                   <img class="rounded-t-lg" src={Learnify} alt="" />
                 </a>
@@ -379,24 +379,27 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
-                <a href="#">
+              <div class="max-w-sm bg-black rounded-lg shadow">
+                <a href="https://life-care-lake.vercel.app/">
                   <img class="rounded-t-lg" src={lifecare} alt="" />
                 </a>
                 <div class="p-5 bg-black">
-                  <a href="#">
+                  <a href="https://life-care-lake.vercel.app/">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                       {" "}
                       LifeCare
                     </h5>
                   </a>
                   <p class="mb-3 font-normal text-white">
-                    LifeCare is a comprehensive medical health platform offering
-                    expert advice, resources, and support for individuals
-                    seeking to improve their well-being.
+                    LifeCare is a holistic medical health platform dedicated to
+                    enhancing well-being through expert advice, informative
+                    resources, and community support. Our mission is to empower
+                    individuals to take charge of their health and make informed
+                    decisions for a healthier life. Join us for guidance on
+                    various health topics and personalized care.
                   </p>
                   <a
-                    href="https://task-manager-client-blush.vercel.app/"
+                    href="https://life-care-lake.vercel.app/"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                   >
                     Read more
@@ -418,7 +421,7 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={Taskmanager} alt="" />
                 </a>
@@ -457,7 +460,7 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={ageimg} alt="" />
                 </a>
@@ -501,7 +504,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={getimage} alt="" />
                 </a>
@@ -541,7 +544,7 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={pocketdictionary} alt="" />
                 </a>
@@ -582,7 +585,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+              <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={todotaskqr} alt="" />
                 </a>
