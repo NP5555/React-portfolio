@@ -7,7 +7,9 @@ import Taskmanager from "../assets/img/register.png";
 import ageimg from "../assets/img/ageCalculator.png";
 import getimage from "../assets/img/getImage.png";
 import pocketdictionary from "../assets/img/pocketdictionary.png";
-import todotaskqr from "../assets/img/todotaskqr.png"
+import todotaskqr from "../assets/img/todotaskqr.png";
+import backend from "../assets/img/socialmediabackend.png";
+import lifecare from "../assets/img/LifeCare-.png"
 
 // import Ai from "../assets/img/project4.png";
 
@@ -245,21 +247,25 @@ const Portfolio = () => {
               <span style={{ color: "white" }}>some of my work"</span>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+                <a href="https://link-upsocial.netlify.app/">
                   <img class="rounded-t-lg" src={LinkUp} alt="" />
                 </a>
                 <div class="p-5 bg-black">
-                  <a href="#">
+                  <a href="https://link-upsocial.netlify.app/">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
                       LinkUp
                     </h5>
                   </a>
                   <p class="mb-3 font-normal text-white">
                     {" "}
-                    A social networking platform designed to connect users,
-                    enabling them to share updates, follow others, and engage
-                    with multimedia content.
+                    LinkUp is a dynamic social media app designed for seamless
+                    interaction and connectivity. Users can share updates,
+                    connect with friends, and engage in discussions. Built with
+                    React for the frontend and Node.js with Express for the
+                    backend, it ensures a smooth and responsive experience,
+                    making social networking intuitive and enjoyable for
+                    everyone.
                   </p>
                   <a
                     href="#"
@@ -284,11 +290,55 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+                <a href="https://github.com/NP5555/E-Learn-Backend">
+                  <img class="rounded-t-lg" src={backend} alt="" />
+                </a>
+                <div class="p-5 bg-black">
+                  <a href="https://github.com/NP5555/E-Learn-Backend">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
+                      Soical Media Application Backend
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-white">
+                    {" "}
+                    The backend for this social media application is built with
+                    Nodejs and MongoDB, providing a scalable foundation for user
+                    interactions and data management. It features user
+                    authentication, post management, commenting, liking,
+                    real-time notifications, and a chat system, all accessible
+                    through a robust RESTful API. This architecture ensures high
+                    performance and security, making it ideal for a dynamic
+                    social media platform
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                  >
+                    Read more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="max-w-sm border border-gray-200 rounded-lg shadow bg-black">
                 <a href="#">
                   <img class="rounded-t-lg" src={Learnify} alt="" />
                 </a>
-                <div class="p-5 bg-black">
+                <div class="p-5">
                   <a href="#">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                       Learnify
@@ -296,9 +346,15 @@ const Portfolio = () => {
                   </a>
                   <p class="mb-3 font-normal text-white">
                     {" "}
-                    A comprehensive platform offering a wide range of courses,
-                    enabling users to learn new skills through interactive
-                    content and assessments.
+                    Learnify is a student-focused platform offering a wide range
+                    of IT courses, including web development, UI/UX design, data
+                    science, and much more. Designed for learners of all levels,
+                    the app allows users to easily browse, purchase, and engage
+                    with high-quality courses taught by industry experts. With a
+                    user-friendly interface and dynamic learning resources,
+                    Learnify empowers students to enhance their skills and
+                    advance their careers. Visit elearnportal.uno to explore
+                    live courses and kickstart your learning journey today!
                   </p>
                   <a
                     href="#"
@@ -323,7 +379,46 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
+                <a href="#">
+                  <img class="rounded-t-lg" src={lifecare} alt="" />
+                </a>
+                <div class="p-5 bg-black">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+                      {" "}
+                      LifeCare
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-white">
+                    LifeCare is a comprehensive medical health platform offering
+                    expert advice, resources, and support for individuals
+                    seeking to improve their well-being.
+                  </p>
+                  <a
+                    href="https://task-manager-client-blush.vercel.app/"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                  >
+                    Read more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={Taskmanager} alt="" />
                 </a>
@@ -362,7 +457,7 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={ageimg} alt="" />
                 </a>
@@ -406,7 +501,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={getimage} alt="" />
                 </a>
@@ -446,7 +541,7 @@ const Portfolio = () => {
                   </a>
                 </div>
               </div>
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={pocketdictionary} alt="" />
                 </a>
@@ -487,7 +582,7 @@ const Portfolio = () => {
                 </div>
               </div>
 
-              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div class="max-w-sm bg-black border border-gray-200 rounded-lg shadow">
                 <a href="#">
                   <img class="rounded-t-lg" src={todotaskqr} alt="" />
                 </a>
