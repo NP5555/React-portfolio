@@ -4,6 +4,11 @@ import MyImg from "../assets/img/main.jpeg";
 import Learnify from "../assets/img/PROJECT1.png";
 import LinkUp from "../assets/img/project2.png";
 import Taskmanager from "../assets/img/register.png";
+import ageimg from "../assets/img/ageCalculator.png";
+import getimage from "../assets/img/getImage.png";
+import pocketdictionary from "../assets/img/pocketdictionary.png";
+import todotaskqr from "../assets/img/todotaskqr.png"
+
 // import Ai from "../assets/img/project4.png";
 
 const Portfolio = () => {
@@ -43,7 +48,6 @@ const Portfolio = () => {
     }, 2000);
     return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
   }, []);
-
 
   return (
     <div>
@@ -89,7 +93,11 @@ const Portfolio = () => {
           </header>
 
           {/* Rest of your content */}
-          <section className="home" style={{ background: "#009688" }} id="home">
+          <section
+            className="home animate-fade-in-up"
+            style={{ background: "#009688" }}
+            id="home"
+          >
             <div className="social">
               <a href="https://github.com/NP5555">
                 <i className="bx bxl-github"></i>
@@ -111,16 +119,20 @@ const Portfolio = () => {
             <div className="home-text">
               <span>Hello, I'm</span>
               <h1 className="font-bold">Naeem Ashraf</h1>
-              <h2>FrontEnd Web/Application Developer</h2>
+              <h2 className>
+                {" "}
+                Professional Front-End Web & Application Developer
+              </h2>
               <p>
-                I am a Web/Application developer, experienced in this sector. If
-                you need to build a professional website, you can hire me! You
-                can choose any of my services or plans.
+                Looking for a skilled developer to create a responsive, modern
+                website or app? I deliver high-quality, user-friendly solutions
+                tailored to your needs. Let’s bring your vision to life—hire me
+                today!
               </p>
               <a
                 href="https://github.com/NP5555"
                 style={{ backgroundColor: "#747472" }}
-                className="btn leads mt-3"
+                className="btn mt-3"
               >
                 Download Resume
               </a>
@@ -128,7 +140,7 @@ const Portfolio = () => {
           </section>
 
           <section
-            className="fadeInUp"
+            className="fadeInUp animate-fade-in-up"
             style={{ background: "#009688" }}
             id="about"
           >
@@ -227,8 +239,8 @@ const Portfolio = () => {
             </div>
           </section>
 
-          <section className="projects">
-          <div className="heading mb-10">
+          <section className="projects animate-fade-in-up">
+            <div className="heading mb-10">
               <h2 style={{ color: "black", fontWeight: "bold" }}>Projects</h2>
               <span style={{ color: "white" }}>some of my work"</span>
             </div>
@@ -328,7 +340,171 @@ const Portfolio = () => {
                     notifications.
                   </p>
                   <a
+                    href="https://task-manager-client-blush.vercel.app/"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                  >
+                    Read more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                  <img class="rounded-t-lg" src={ageimg} alt="" />
+                </a>
+                <div class="p-5 bg-black">
+                  <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+                      {" "}
+                      Age Counter App
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-white">
+                    A React-based tool that calculates a user's age in years,
+                    months, and days. Users input their birthdate, and the app
+                    validates the date before displaying the exact age. It uses
+                    React hooks for state management and react-hot-toast for
+                    error handling. Styled with Tailwind CSS, the app provides a
+                    clean and interactive interface, allowing users to track
+                    their age with ease.
+                  </p>
+                  <a
+                    href="https://countmyage.vercel.app/"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                  >
+                    Read more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                  <img class="rounded-t-lg" src={getimage} alt="" />
+                </a>
+                <div class="p-5 bg-black">
+                  <a href="https://getimage-one.vercel.app/">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+                      {" "}
+                      GetImage_
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-white">
+                    A full-screen responsive image search and gallery app built
+                    with React and TailwindCSS. Features dynamic search,
+                    grid-based layout, image modal view, and download
+                    functionality using Unsplash API.
+                  </p>
+                  <a
+                    href="https://getimage-one.vercel.app/"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                  >
+                    Read more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                  <img class="rounded-t-lg" src={pocketdictionary} alt="" />
+                </a>
+                <div class="p-5 bg-black">
+                  <a href="https://pocket-dictionary-nu.vercel.app/">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+                      {" "}
+                      Pocket Dictionary
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-white">
+                    A compact React-based Pocket Dictionary app offering instant
+                    word search, definitions, and synonyms. Powered by an API
+                    for accurate word meanings, with a clean, responsive UI for
+                    easy access anywhere.
+                  </p>
+                  <a
                     href="#"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                  >
+                    Read more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <a href="#">
+                  <img class="rounded-t-lg" src={todotaskqr} alt="" />
+                </a>
+                <div class="p-5 bg-black">
+                  <a href="https://pocket-dictionary-nu.vercel.app/">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
+                      {" "}
+                      QR todo-task-List
+                    </h5>
+                  </a>
+                  <p class="mb-3 font-normal text-white">
+                    The QR Todo Task app allows users to create, manage, and
+                    track tasks effortlessly using QR codes. Simplify your
+                    productivity by scanning codes to access tasks on the go!
+                  </p>
+                  <a
+                    href="https://todotask-app.vercel.app/"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                   >
                     Read more
@@ -389,8 +565,7 @@ const Portfolio = () => {
                 ></textarea>
                 <button
                   type="submit"
-              
-                  className="btn btn-light hover:text-white hover:bg-black text-black"
+                  className="btn  hover:text-black hover:bg-black text-black"
                 >
                   Send Message
                 </button>
@@ -398,9 +573,7 @@ const Portfolio = () => {
             </div>
           </section>
 
-
-
-          <div className="copyright" >
+          <div className="copyright">
             <p>&#169; Naeem Ashraf. All Right Reserved</p>
           </div>
         </>

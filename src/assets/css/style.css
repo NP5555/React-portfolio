@@ -1,9 +1,5 @@
  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap");
- body{
 
-background-image: #009688;
-
- }
 
  .loader {
   background: #000 url(/src/assets//img/loader.gif) no-repeat center;
@@ -24,23 +20,13 @@ background-image: #009688;
    scroll-padding-top: 2rem;
    font-family: "Poppins", sans-serif;
  }
- 
- .fade-up {
-  opacity: 0;
-  transform: translateY(20px);
-}
 
-.fade-up.active {
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeInUp 1s ease-out forwards; /* Make sure this matches your Tailwind CSS config */
-}
 
  :root {
    --main-color: black;
    --bg-color: #009688;
    --text-color: #0f0c27;
-   --hover: #009688;
+   --hover: white;
    --big-font: 3.2rem;
    --medium-font: 1.8rem;
    --p-font: 0.941rem;
@@ -582,6 +568,9 @@ background-image: #009688;
    }
  }
 
+
+
+
  @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -601,5 +590,5 @@ background-image: #009688;
 
 .fade-up.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(20px);
 }
