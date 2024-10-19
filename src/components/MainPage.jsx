@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState} from "react";
 import "../assets/css/style.css";
 import MyImg from "../assets/img/main.jpeg";
 import Learnify from "../assets/img/PROJECT1.png";
@@ -13,7 +13,7 @@ import lifecare from "../assets/img/LifeCare-.png";
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
-  const aboutRef = useRef(null);
+  // const aboutRef = useRef(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -107,11 +107,14 @@ const Portfolio = () => {
               <a href="https://github.com/NP5555">
                 <i className="bx bxl-github"></i>
               </a>
-              <a href="#">
-                <i className="bx bxl-instagram"></i>
+              <a href="https://medium.com/@ngs.naeemashraf">
+                <i className="bx bxl-medium"></i>
               </a>
-              <a href="https://facebook.com">
-                <i className="bx bxl-facebook"></i>
+              <a href="https://www.linkedin.com/in/naeem-ashraf-242663190/">
+                <i className="bx bxl-linkedin"></i>
+              </a>
+              <a href="https://www.upwork.com/">
+                <i className="bx bxl-upwork"></i>
               </a>
             </div>
             <div className="home-img">
@@ -122,13 +125,13 @@ const Portfolio = () => {
               />
             </div>
             <div className="home-text">
-              <span>Hello, I'm</span>
-              <h1 className="font-bold">Naeem Ashraf</h1>
-              <h2 className>
+              <span className="text-black">Hello, I'm</span>
+              <h1 className="font-bold text-yellow-400">Naeem Ashraf</h1>
+              <h2 className="text-teal-50">
                 {" "}
                 Professional Front-End Web & Application Developer
               </h2>
-              <p>
+              <p className="text-teal-50">
                 Looking for a skilled developer to create a responsive, modern
                 website or app? I deliver high-quality, user-friendly solutions
                 tailored to your needs. Let’s bring your vision to life—hire me
@@ -136,7 +139,7 @@ const Portfolio = () => {
               </p>
               <a
                 href="https://github.com/NP5555"
-                style={{ backgroundColor: "#747472" }}
+                style={{ backgroundColor: "black" }}
                 className="btn mt-3"
               >
                 Download Resume
@@ -162,7 +165,7 @@ const Portfolio = () => {
                 />
               </div>
               <div className="about-text">
-                <p>
+                <p className="text-teal-50">
                   Hi, I am Naeem. I'm an experienced frontend developer with 3+
                   years of expertise in building responsive web applications
                   using HTML, CSS, JavaScript, Bootstrap - React, and various
@@ -171,14 +174,14 @@ const Portfolio = () => {
                 </p>
                 <div className="information">
                   <div className="info-box">
-                    <i className="bx bx-laptop"></i> <span>Naeem Ashraf</span>
+                    <i className="bx bx-laptop"></i> <span className="text-teal-50">Naeem Ashraf</span>
                   </div>
                   <div className="info-box">
-                    <i className="bx bxs-phone"></i> <span>+923343288667</span>
+                    <i className="bx bxs-phone "></i> <span className=" text-teal-50">+923343288667</span>
                   </div>
                   <div className="info-box">
                     <i className="bx bxs-envelope"></i>{" "}
-                    <span>
+                    <span className="text-teal-50">
                       <a href="mailto:naeemashrafpansota@gmail.com">
                         naeemashrafpansota@gmail.com
                       </a>
@@ -186,8 +189,8 @@ const Portfolio = () => {
                   </div>
                 </div>
                 <a
-                  href="https://github.com/NP555"
-                  style={{ backgroundColor: "#747472" }}
+                  href="https://github.com/NP5555"
+                  style={{ backgroundColor: "black" }}
                   className="btn"
                 >
                   Information
