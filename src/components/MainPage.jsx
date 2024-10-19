@@ -4,7 +4,7 @@ import MyImg from "../assets/img/main.jpeg";
 import Learnify from "../assets/img/PROJECT1.png";
 import LinkUp from "../assets/img/project2.png";
 import Taskmanager from "../assets/img/register.png";
-import age from "../assets/img/agecalculator.png";
+import ageCalculatorImg from "../assets/img/agecalculator.png";
 import getimage from "../assets/img/getImage.png";
 import pocketdictionary from "../assets/img/pocketdictionary.png";
 import todotaskqr from "../assets/img/todotaskqr.png";
@@ -468,7 +468,7 @@ const Portfolio = () => {
               </div>
               <div class="max-w-sm bg-black rounded-lg shadow">
                 <a href="https://countmyage.vercel.app/">
-                  <img class="rounded-t-lg" src={age} alt="" />
+                {ageCalculatorImg && <img src={ageCalculatorImg} alt="Age Calculator" />}
                 </a>
                 <div class="p-5 bg-black">
                   <a href="https://countmyage.vercel.app/">
