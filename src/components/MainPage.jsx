@@ -11,14 +11,10 @@ import todotaskqr from "../assets/img/todotaskqr.png";
 import backend from "../assets/img/socialmediabackend.png";
 import lifecare from "../assets/img/LifeCare-.png";
 
-
-// import Ai from "../assets/img/project4.png";
-
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); 
   const aboutRef = useRef(null);
   const [loading, setLoading] = useState(true);
-
 
   useEffect(() => {
     const sections = document.querySelectorAll(".fade-up"); 
@@ -48,28 +44,20 @@ const Portfolio = () => {
     };
   }, []);
 
-
-
-
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
     }, 2000);
-    return () => clearTimeout(timer); // Cleanup the timer when the component unmounts
+    return () => clearTimeout(timer);
   }, []);
-
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
-
   return (
     <div>
       {loading ? (
-        // Loader component
         <div className="flex items-center justify-center h-screen ">
           <div className="loader ease-linear"></div>
         </div>
@@ -109,7 +97,7 @@ const Portfolio = () => {
             </ul>
           </header>
 
-          {/* Rest of your content */}
+
           <section
             className="home .fade-up animate-fade-in-up"
             style={{ background: "#009688" }}
