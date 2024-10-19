@@ -64,7 +64,7 @@ const Portfolio = () => {
       ) : (
         <>
      <header style={{ background: "#009688" }}>
-            <a href="#" className="logo" style={{ color: "black" }}>
+            <a href="/" className="logo" style={{ color: "black" }}>
               Naeem.<span style={{ color: "white" }}>Ashraf</span>
             </a>
             <div className="bx bx-menu" id="menu-icon" onClick={toggleMenu}></div>
@@ -119,7 +119,7 @@ const Portfolio = () => {
             </div>
             <div className="home-img">
               <img
-                alt="Image of Naeem Ashraf"
+                alt="Naeem Ashraf"
                 style={{ borderRadius: "20%", marginTop: "20px" }}
                 src={MyImg}
               />
@@ -159,7 +159,7 @@ const Portfolio = () => {
             <div className="about-container">
               <div className="about-img">
                 <img
-                  alt="Image of Naeem Ashraf"
+                  alt="Naeem Ashraf"
                   style={{ borderRadius: "20%" }}
                   src={MyImg}
                 />
@@ -239,7 +239,7 @@ const Portfolio = () => {
               </div>
               <div className="skills-img">
                 <img
-                  alt="Image of Naeem Ashraf"
+                  alt="Naeem Ashraf"
                   style={{ borderRadius: "20%" }}
                   src={MyImg}
                 />
@@ -274,7 +274,7 @@ const Portfolio = () => {
                     everyone.
                   </p>
                   <a
-                    href="#"
+                    href="/"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                   >
                     Read more
@@ -318,7 +318,7 @@ const Portfolio = () => {
                     social media platform
                   </p>
                   <a
-                    href="#"
+                    href="/"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                   >
                     Read more
@@ -341,11 +341,11 @@ const Portfolio = () => {
                 </div>
               </div>
               <div class="max-w-sm rounded-lg shadow bg-black">
-                <a href="#">
+                <a href="/">
                   <img class="rounded-t-lg" src={Learnify} alt="" />
                 </a>
                 <div class="p-5">
-                  <a href="#">
+                  <a href="/">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                       Learnify
                     </h5>
@@ -363,7 +363,7 @@ const Portfolio = () => {
                     live courses and kickstart your learning journey today!
                   </p>
                   <a
-                    href="#"
+                    href="/"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                   >
                     Read more
@@ -428,11 +428,11 @@ const Portfolio = () => {
                 </div>
               </div>
               <div class="max-w-sm bg-black rounded-lg shadow">
-                <a href="#">
+                <a href="https://task-manager-client-blush.vercel.app/">
                   <img class="rounded-t-lg" src={Taskmanager} alt="" />
                 </a>
                 <div class="p-5 bg-black">
-                  <a href="#">
+                  <a href="https://task-manager-client-blush.vercel.app/">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                       {" "}
                       Task Manager
@@ -467,11 +467,11 @@ const Portfolio = () => {
                 </div>
               </div>
               <div class="max-w-sm bg-black rounded-lg shadow">
-                <a href="#">
+                <a href="https://countmyage.vercel.app/">
                   <img class="rounded-t-lg" src={age} alt="" />
                 </a>
                 <div class="p-5 bg-black">
-                  <a href="#">
+                  <a href="https://countmyage.vercel.app/">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                       {" "}
                       Age Counter App
@@ -511,7 +511,7 @@ const Portfolio = () => {
               </div>
 
               <div class="max-w-sm bg-black rounded-lg shadow">
-                <a href="#">
+                <a href="https://getimage-one.vercel.app/">
                   <img class="rounded-t-lg" src={getimage} alt="" />
                 </a>
                 <div class="p-5 bg-black">
@@ -551,7 +551,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div class="max-w-sm bg-black rounded-lg shadow">
-                <a href="#">
+                <a href="https://pocket-dictionary-nu.vercel.app/">
                   <img class="rounded-t-lg" src={pocketdictionary} alt="" />
                 </a>
                 <div class="p-5 bg-black">
@@ -568,7 +568,7 @@ const Portfolio = () => {
                     easy access anywhere.
                   </p>
                   <a
-                    href="#"
+                    href="https://pocket-dictionary-nu.vercel.app/"
                     class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
                   >
                     Read more
@@ -592,11 +592,11 @@ const Portfolio = () => {
               </div>
 
               <div class="max-w-sm bg-black rounded-lg shadow">
-                <a href="#">
+                <a href="https://todotask-app.vercel.app/">
                   <img class="rounded-t-lg" src={todotaskqr} alt="" />
                 </a>
                 <div class="p-5 bg-black">
-                  <a href="https://pocket-dictionary-nu.vercel.app/">
+                  <a href="https://todotask-app.vercel.app/">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-white dark:text-white">
                       {" "}
                       QR todo-task-List
