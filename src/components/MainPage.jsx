@@ -175,11 +175,11 @@ const Portfolio = () => {
                 <div className="information">
                   <div className="info-box">
                     <i className="bx bx-laptop"></i>{" "}
-                    <span className="text-teal-50">Naeem Ashraf</span>
+                    <span className="text-teal-50">Muhammad Naeem Ashraf</span>
                   </div>
                   <div className="info-box">
-                    <i className="bx bxs-phone "></i>{" "}
-                    <span className=" text-teal-50">+923343288667</span>
+                    <i className="bx bxs-phone"></i>{" "}
+                    <span className=" text-teal-50">+92-334-3288667</span>
                   </div>
                   <div className="info-box">
                     <i className="bx bxs-envelope"></i>{" "}
